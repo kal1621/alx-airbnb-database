@@ -63,3 +63,8 @@
 - **Property to Review**: One-to-Many (A property can receive multiple reviews)
 - **Booking to Payment**: One-to-One (Each booking has one associated payment)
 - **User to Message**: One-to-Many (A user can send and receive multiple messages)
+
+## Entity-Relationship Diagram
+
+
+<img width="759" height="908" alt="airbnb ER" src="https://github.com/user-attachments/assets/b8dffdec-3ed1-4015-8b22-f2e3987d10a9" />
