@@ -1,6 +1,5 @@
 # Database Schema for AirBnB
 
-This document contains the SQL `CREATE TABLE` statements for the AirBnB database schema based on the provided specifications. The schema includes appropriate data types, primary keys, foreign keys, constraints, and indexes.
 
 ## SQL DDL Statements
 
