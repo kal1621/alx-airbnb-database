@@ -1,3 +1,5 @@
+-- Aggregations and Window Functions for Airbnb Database
+
 -- Total Number of Bookings by Each User
 SELECT
     users.id AS user_id,
@@ -21,4 +23,6 @@ FROM
 LEFT JOIN
     bookings ON properties.id = bookings.property_id
 GROUP BY
-    properties.id, properties.title;
+    properties.id, properties.title
+ORDER BY
+    booking_rank;  -- Order by booking rank for clarity
