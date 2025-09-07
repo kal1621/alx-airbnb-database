@@ -32,3 +32,49 @@ CREATE INDEX idx_booking_start_date ON bookings(start_date);
 -- Property Table
 CREATE INDEX idx_property_location ON properties(location);
 CREATE INDEX idx_property_title ON properties(title);
+
+
+Performance Measurement
+Queries Before Indexing
+Example Query: Find all bookings for a specific user.
+
+sql
+
+EXPLAIN SELECT * 
+FROM bookings 
+WHERE user_id = 123;  -- Replace 123 with a specific user ID
+Execution Plan Before Indexing:
+
+(Include output of the EXPLAIN command before indexing here)
+Example Query: Find all properties in a specific location.
+
+sql
+
+EXPLAIN SELECT * 
+FROM properties 
+WHERE location = 'New York';  -- Replace with a specific location
+Execution Plan Before Indexing:
+
+(Include output of the EXPLAIN command before indexing here)
+Queries After Indexing
+Example Query: Find all bookings for a specific user.
+
+sql
+
+EXPLAIN SELECT * 
+FROM bookings 
+WHERE user_id = 123;  -- Replace 123 with a specific user ID
+Execution Plan After Indexing:
+
+(Include output of the EXPLAIN command after indexing here)
+Example Query: Find all properties in a specific location.
+
+sql
+
+EXPLAIN SELECT * 
+FROM properties 
+WHERE location = 'New York';  -- Replace with a specific location
+Execution Plan After Indexing:
+
+(Include output of the EXPLAIN command after indexing here)
+
