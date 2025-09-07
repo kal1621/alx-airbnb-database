@@ -42,7 +42,7 @@ sql
 
 EXPLAIN SELECT * 
 FROM bookings 
-WHERE user_id = 123;  -- Replace 123 with a specific user ID
+WHERE user_id = 123;  
 Execution Plan Before Indexing:
 
 (Include output of the EXPLAIN command before indexing here)
@@ -52,7 +52,7 @@ sql
 
 EXPLAIN SELECT * 
 FROM properties 
-WHERE location = 'New York';  -- Replace with a specific location
+WHERE location = 'New York'; 
 Execution Plan Before Indexing:
 
 (Include output of the EXPLAIN command before indexing here)
@@ -63,7 +63,7 @@ sql
 
 EXPLAIN SELECT * 
 FROM bookings 
-WHERE user_id = 123;  -- Replace 123 with a specific user ID
+WHERE user_id = 123;  
 Execution Plan After Indexing:
 
 (Include output of the EXPLAIN command after indexing here)
@@ -73,7 +73,7 @@ sql
 
 EXPLAIN SELECT * 
 FROM properties 
-WHERE location = 'New York';  -- Replace with a specific location
+WHERE location = 'New York';  
 Execution Plan After Indexing:
 
 (Include output of the EXPLAIN command after indexing here)
