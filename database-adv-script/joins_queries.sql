@@ -14,6 +14,7 @@ INNER JOIN
 SELECT
     properties.id AS property_id,
     properties.title,
+    properties.location,
     reviews.id AS review_id,
     reviews.rating,
     reviews.comment
